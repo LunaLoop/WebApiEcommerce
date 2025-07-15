@@ -13,7 +13,7 @@ public partial class Producto
 
     public int? IdCategoria { get; set; }
 
-    public byte[]? Imagen { get; set; }
+    public string Imagen { get; set; }
 
     public virtual ICollection<Almacenproducto> Almacenproducto { get; set; } = new List<Almacenproducto>();
 
