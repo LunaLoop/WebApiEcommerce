@@ -21,10 +21,10 @@ Este proyecto permite gestionar productos, pedidos, clientes y facturación para
 
 Abre la Consola del Administrador de Paquetes de NuGet y ejecuta los siguientes comandos:
 ---
-Install-Package Microsoft.EntityFrameworkCore -Version 8.0.3
-Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.3
-Install-Package Microsoft.EntityFrameworkCore.Design -Version 8.0.3
-Install-Package Pomelo.EntityFrameworkCore.MySql -Version 8.0.0
+- Install-Package Microsoft.EntityFrameworkCore -Version 8.0.3
+- Install-Package Microsoft.EntityFrameworkCore.Tools -Version 8.0.3
+- Install-Package Microsoft.EntityFrameworkCore.Design -Version 8.0.3
+- Install-Package Pomelo.EntityFrameworkCore.MySql -Version 8.0.0
 
 
 > ⚠️ Asegúrate de tener seleccionado el proyecto correcto como *Startup Project* antes de ejecutar estos comandos.
@@ -34,7 +34,7 @@ Install-Package Pomelo.EntityFrameworkCore.MySql -Version 8.0.0
 ## 🔌 Conexión a la Base de Datos
 
 Para generar el contexto y los modelos desde tu base de datos MySQL, usa este comando:
----
+
 Scaffold-DbContext "server=localhost;port=3306;uid=root;pwd=tu_contraseña;database=TiendaVirtual" Pomelo.EntityFrameworkCore.MySql -OutputDir Data -f -NoPluralize -Context TiendaVirtualContext
 ---
 
