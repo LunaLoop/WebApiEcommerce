@@ -30,7 +30,7 @@ namespace WebApiEcommerce.Dtos
         [Range(1, int.MaxValue, ErrorMessage = "Debe seleccionar una categoría válida.")]
         public int IdCategoria { get; set; }
 
-        public string Imagen { get; set; }
+        public string? Imagen { get; set; }
 
     }
 
