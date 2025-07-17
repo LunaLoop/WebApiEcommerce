@@ -15,7 +15,8 @@ public partial class Direccionenvio
 
     public string? Departamento { get; set; }
 
-    public string? CodigoPostal { get; set; }
+   public decimal Latitud {  get; set; }
+   public decimal Longitud { get; set; }
 
     public virtual ICollection<Pedido> Pedido { get; set; } = new List<Pedido>();
 

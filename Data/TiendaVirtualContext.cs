@@ -283,8 +283,12 @@ public partial class TiendaVirtualContext : DbContext
             entity.HasIndex(e => e.UsuarioId, "UsuarioId");
 
             entity.Property(e => e.Ciudad).HasMaxLength(100);
-            entity.Property(e => e.CodigoPostal).HasMaxLength(20);
+            
             entity.Property(e => e.Departamento).HasMaxLength(100);
+            entity.Property(e => e.Latitud).HasColumnType("decimal(10,8)");
+
+            entity.Property(e => e.Longitud).HasColumnType("decimal(11,8)");
+
             entity.Property(e => e.Direccion).HasMaxLength(255);
 
             entity.HasOne(d => d.Usuario).WithMany(p => p.Direccionenvio)
