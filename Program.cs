@@ -22,6 +22,7 @@ builder.Services.AddScoped<CategoriaRN>();
 builder.Services.AddScoped<ProductoRN>();
 builder.Services.AddSingleton<CloudinaryService>();
 builder.Services.AddScoped<ImagenService>();
+builder.Services.AddScoped<LoginRN>();
 
 
 var app = builder.Build();
